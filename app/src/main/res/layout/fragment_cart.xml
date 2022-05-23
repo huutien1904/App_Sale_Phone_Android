@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.CartFragment">
+    <!-- ảnh khi không có sản phầm nào được chọn trong giỏ hàng   -->
+    <RelativeLayout
+        android:id="@+id/rl_cart_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_cart_empty"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/emptycart"
+            android:layout_centerHorizontal="true">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Không Có Sản Phẩm Nào Trong Giỏ Hàng"
+            android:textSize="20sp"
+            android:textColor="@color/text_color"
+            android:layout_below="@+id/img_cart_empty"
+            android:layout_centerHorizontal="true">
+        </TextView>
+
+    </RelativeLayout>
+    <!--khi có sản phẩm được chọn trong giỏ-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_cart_product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"></androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/tv_cart_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/rcv_cart_product"
+                android:text="Tổng Tiền :"
+                android:textSize="20sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_cart_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/rcv_cart_product"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/tv_cart_total"
+                android:text="50.000.000"
+                android:textSize="20sp"
+                android:textColor="@color/red">
+            </TextView>
+
+            <View
+                android:id="@+id/spacer"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_cart_total"
+                android:background="@color/gray">
+            </View>
+
+            <TextView
+                android:id="@+id/info_cust"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/spacer"
+                android:text="Thông Tin Khách Hàng :"
+                android:textColor="@color/text_color"
+                android:textSize="20sp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/edt_cart_cust_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/info_cust"
+                android:background="@drawable/custom_edit_text"
+                android:padding="10dp"
+                android:hint="Họ Tên"
+                android:fontFamily="sans-serif-light"
+                android:textSize="17sp"
+                android:textColor="@color/text_color"
+                android:drawableLeft="@drawable/ic_baseline_account_box_24"
+                android:drawablePadding="10dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/edt_cart_cust_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/edt_cart_cust_name"
+                android:background="@drawable/custom_edit_text"
+                android:padding="10dp"
+                android:hint="Địa Chỉ"
+                android:fontFamily="sans-serif-light"
+                android:textSize="17sp"
+                android:textColor="@color/text_color"
+                android:drawableLeft="@drawable/ic_baseline_home_work_24"
+                android:drawablePadding="10dp">
+            </EditText>
+
+            <EditText
+                android:id="@+id/edt_cart_cust_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/edt_cart_cust_address"
+                android:background="@drawable/custom_edit_text"
+                android:padding="10dp"
+                android:inputType="phone"
+                android:hint="Số Điện Thoại"
+                android:fontFamily="sans-serif-light"
+                android:textSize="17sp"
+                android:textColor="@color/text_color"
+                android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+                android:drawablePadding="10dp">
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_cart_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/edt_cart_cust_phone"
+                android:text="Đặt Hàng"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null">
+            </Button>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</FrameLayout>

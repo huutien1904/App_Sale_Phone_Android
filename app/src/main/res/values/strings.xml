@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BTL_AppBanDienThoai</string>
+
+    // Title Fragment
+    <string name="tab_product">Sản Phẩm</string>
+    <string name="tab_cart">Giỏ Hàng</string>
+    <string name="tab_history">Lịch Sử Mua Hàng</string>
+</resources>

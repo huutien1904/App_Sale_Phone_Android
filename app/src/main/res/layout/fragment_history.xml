@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HistoryFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_history_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_hitory_bg"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/hitory_search">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tv_hitory_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_hitory_bg"
+                android:text="Tìm Kiếm Thông Tin Mua Hàng"
+                android:textColor="@color/text_color"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true">
+            </TextView>
+
+            <EditText
+                android:id="@+id/edt_history_phone"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hitory_text"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/custom_edit_text"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:hint="Nhập Số Điện Thoại Mua Hàng"
+                android:inputType="phone"
+                android:fontFamily="sans-serif-light"
+                android:textSize="15sp"
+                android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+                android:drawablePadding="10dp">
+            </EditText>
+
+            <Button
+                android:id="@+id/btn_history_search"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/edt_history_phone"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Tìm Kiếm"
+                android:textSize="10sp"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null">
+            </Button>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_hitory_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_history_search"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

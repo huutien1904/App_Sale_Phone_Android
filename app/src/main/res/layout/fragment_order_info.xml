@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.OrderInfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:id="@+id/tv_order_info_text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thông Tin Đặt Hàng"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text1"
+                android:text="Mã Đặt Hàng :"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text1"
+                android:layout_toRightOf="@+id/tv_order_info_text2"
+                android:text="AAAAA"
+                android:textSize="15sp"
+                android:textColor="@color/teal_200">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text3"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text2"
+                android:text="Ngày Đặt :"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text2"
+                android:layout_toRightOf="@+id/tv_order_info_text3"
+                android:text="27-01-2021"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text4"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text3"
+                android:text="Tên Khách Hàng :"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_cust_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text3"
+                android:layout_toRightOf="@+id/tv_order_info_text4"
+                android:text="Trí"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text5"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text4"
+                android:text="Địa Chỉ :"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_cust_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text4"
+                android:layout_toRightOf="@+id/tv_order_info_text5"
+                android:text="12 Hải Triều"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text6"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text5"
+                android:text="Số Điện Thoại :"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_cust_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text5"
+                android:layout_toRightOf="@+id/tv_order_info_text5"
+                android:text="0777838375"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text7"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text6"
+                android:text="Số Sản Phẩm:"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text6"
+                android:layout_toRightOf="@+id/tv_order_info_text5"
+                android:text="3"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text8"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text7"
+                android:text="Tổng Tiền :"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text7"
+                android:layout_toRightOf="@+id/tv_order_info_text6"
+                android:text="30,000,000 VNĐ"
+                android:textSize="15sp"
+                android:textColor="@color/red">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_text9"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text8"
+                android:text="Trạng Thái :"
+                android:textSize="15sp"
+                android:textColor="@color/text_color">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_order_info_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text8"
+                android:layout_toRightOf="@+id/tv_order_info_text7"
+                android:text="Đang Chờ Xác Nhận"
+                android:textSize="15sp"
+                android:textColor="@color/teal_700">
+            </TextView>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/tv_order_info_text9"
+                android:background="@color/divider">
+            </View>
+
+            <TextView
+                android:id="@+id/tv_order_info_text10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider2"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/text_color"
+                android:textSize="15sp"></TextView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_order_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/tv_order_info_text10">
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btn_order_info_back"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/rcv_order_info"
+                android:layout_centerHorizontal="true"
+                android:text="Quay Lại"
+                android:textSize="15sp"
+                android:background="@drawable/custom_button"
+                android:backgroundTint="@null"
+                app:backgroundTint="@null">
+            </Button>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>
